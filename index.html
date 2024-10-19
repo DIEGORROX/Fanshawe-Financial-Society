@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Fanshawe Financial Society - Fanshawe_Financial_Society</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0" />
+    <link rel="stylesheet" href="/Fanshawe_Financial_Society.styles.css" />
+</head>
+<body>
+    <header b-x0jhwvy2hn>
+        <nav b-x0jhwvy2hn class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div b-x0jhwvy2hn class="container">
+                <a class="navbar-brand" href="/">Fanshawe_Financial_Society</a>
+                <button b-x0jhwvy2hn class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-x0jhwvy2hn class="navbar-toggler-icon"></span>
+                </button>
+                <div b-x0jhwvy2hn class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul b-x0jhwvy2hn class="navbar-nav flex-grow-1">
+                        <li b-x0jhwvy2hn class="nav-item">
+                            <a class="nav-link text-dark" href="/">Home</a>
+                        </li>
+                        <li b-x0jhwvy2hn class="nav-item">
+                            <a class="nav-link text-dark" href="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div b-x0jhwvy2hn class="container">
+        <main b-x0jhwvy2hn role="main" class="pb-3">
+            
+<div class="text-center">
+    <h1 class="display-4">Objective</h1>
+    <p>Connect students with financial professionals through discussion forums, enabling both parties the opportunity to share ideas, discuss trending topics, learn about different financial experiences, and collaborate to foster a deeper understanding of financial concepts.</p>
+    <h2 class="display-4">Mission</h2>
+    <p>Insert mission.</p>
+    <h3 class="display-4">Values</h3>
+    <ul>
+        <li onmouseover="showdescription('Promoting the exchange of ideas and experiences')"
+            onmouseout="hidedescription()">Knowledge sharing</li>
+        <li onmouseover="showdescription('Encourage teamwork and joint efforts between students and professionals')"
+            onmouseout="hidedescription()">Collaboration</li>
+        <li onmouseover="showdescription('Emphasizing the importance of ongoing education and staying updated with trends')"
+            onmouseout="hidedescription()">Foster Continuous Learning</li>
+        <li onmouseover="showdescription('Fostering an environment where both parties can grow and benefit from the interaction')"
+            onmouseout="hidedescription()">Develop mutual growth </li>
+    </ul>
+
+</div>
+
+<div id="description-box" class="description-box"></div>
+
+<style>
+    .description-box {
+        display: none; /* Initially hidden */
+        position: absolute; /* Absolute positioning so it can follow the cursor */
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        z-index: 1000; /* Ensures it appears above other content */
+        width: 200px;
+        font-style: italic;
+        color: gray;
+    }
+</style>
+
+<script>
+    function showdescription(text) {
+        var descriptionBox = document.getElementById('description-box');
+        descriptionBox.style.display = 'block';  // Show the description box
+        descriptionBox.innerText = text;        // Set the description text
+    }
+
+    function hidedescription() {
+        var descriptionBox = document.getElementById('description-box');
+        descriptionBox.style.display = 'none';  // Hide the description box
+    }
+
+    // Position the description box near the mouse cursor
+    document.addEventListener('mousemove', function (e) {
+        var descriptionBox = document.getElementById('description-box');
+        descriptionBox.style.top = (e.pageY + 10) + 'px';  // Adjust Y position
+        descriptionBox.style.left = (e.pageX + 10) + 'px'; // Adjust X position
+    });
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Events</h1>
+    <p>Connect students with financial professionals...</p>
+</div>
+
+<link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
+<div id="calendar"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            events: [
+                {
+                    title: 'Meet and greet',
+                    start: '2024-11-1' 
+                },
+                
+            ]
+        });
+
+        calendar.render();
+    });
+</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info Section</title>
+</head>
+<body>
+<div class="contact-info">
+    <h2 class="display-4">Contact Info</h2>
+    <p>Please follow us:</p>
+    <ul>
+        <li><a href="https://www.facebook.com/YourPage" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com/YourPage" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/YourPage" target="_blank">Instagram</a></li>
+    </ul>
+</div>
+
+<script src="/_framework/aspnetcore-browser-refresh.js"></script></body>
+</html>
+<style>
+    .contact-info {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+            .contact-info a:hover {
+                text-decoration: underline;
+                color: #0056b3;
+            }
+</style>
+
+        </main>
+    </div>
+
+    <footer b-x0jhwvy2hn class="border-top footer text-muted">
+        <div b-x0jhwvy2hn class="container">
+            &copy; 2024 - Fanshawe_Financial_Society - <a href="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"></script>
+
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="e1efe1ba3b94477da986bd1863aaae7d" data-requestMappingFromServer="false" data-connectUrl="http://localhost:50800/4616b6adf23e4b848ec3ba40a9a72552/browserLink"></script>
+<!-- End Browser Link -->
+</body>
+</html>
